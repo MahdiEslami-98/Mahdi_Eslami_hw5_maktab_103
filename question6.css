@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wrapper::before {
+  content: "";
+  background-image: url("./image/night\ scenery\ of\ shenzhen\ landmark.jpg");
+  background-size: cover;
+  opacity: 0.12;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.container {
+  position: relative;
+  background-image: linear-gradient(#777df2, #a33be0);
+  width: 25rem;
+  height: 30rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px 20px;
+}
+
+.head {
+  text-align: center;
+}
+
+img {
+  border-radius: 50px;
+  width: 90px;
+}
+
+.inps {
+  width: 300px;
+  height: 35px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inps i {
+  position: absolute;
+  left: 5px;
+  top: 9px;
+}
+
+.text-input {
+  width: 100%;
+  height: 35px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  padding: 0 30px;
+  font-size: 16px;
+}
+
+.text-input::placeholder {
+  color: #ccc;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
